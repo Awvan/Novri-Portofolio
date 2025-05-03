@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novri Kurniawan</title>
+
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts - Using Poppins for a modern, approachable look -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link File CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Brand/logo dengan gambar -->
+        <a class="navbar-brand mx-3 d-flex align-items-center" href="#">
+          <img src="images/logo.jpg" alt="Novri Kurniawan Logo" class="navbar-logo me-2">
+          Novri Kurniawan
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section - Updated for educator/content creator -->
+    <section id="home" class="hero-section fixed-center">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-lg-6" data-aos="zoom-out-right" data-aos-duration="3000">
+            <!-- Updated headline for teaching/coaching focus -->
+            <h1 class="display-4 fw-bold mb-4">
+              Hai, aku Novri
+            </h1>
+            <h1 class="display-5 fw-bold mb-5">
+              Ingin Mengembangkan Potensi Diri Anda?
+            </h1>
+            <p class="lead mb-4">
+              Ikut bersama kami dalam kegiatan pengembangan diri, skil, dan
+              minat bakat lainnya, dengan pelatih yang berpengalaman
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <!-- Placeholder for educator image - would be replaced with your actual image -->
+            <img
+              src="images/profile.jpg"
+              alt="Profile"
+              class="img-fluid rounded-circle hero-img js-tilt" data-aos="zoom-out-left" data-aos-duration="3000"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section - Updated for educator background -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">About Me</h2>
+
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <!-- Updated image placeholder -->
+            <img
+              src="images/classroom.jpg" 
+              class="img-fluid rounded shadow" data-aos="fade-right" data-aos-duration="3000"
+            />
+          </div>
+          <div class="col-lg-6" data-aos="fade-up-left" data-aos-duration="3000">
+            <h3>Motivasi Mengajar Saya</h3>
+            <p>
+              Setiap pelajar adalah kanvas kosong yang menunggu coretan makna.
+              Tugas kita bukan hanya mengajar, tapi menyalakan api curiosity dan
+              membantu mereka menemukan versi terbaik diri mereka sendiri.
+            </p>
+            <p>
+              Mengajar bukan soal mentransfer pengetahuan, tapi tentang
+              menumbuhkan keyakinan bahwa setiap anak punya keunikan yang layak
+              dikembangkan.
+            </p>
+
+            <!-- Added education background -->
+            <div class="mt-4">
+              <h4>Latar Belakang Pendidikan</h4>
+              <ul>
+                <li>Mahasiswa Ilmu Komputer</li>
+                <li>Pelatih Profesional Bersertifikat</li>
+                <li>Sertifikasi Lanjutan dalam Produksi Video</li>
+                <li>Konten Kreator Selama 5 Tahun</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-6" data-aos="zoom-in-up" data-aos-duration="3000">
+            <h3>Keterampilan & Keahlian Saya</h3>
+            <!-- Updated skills for educator/content creator -->
+            <div class="skill-item mb-3">
+              <h5>Pengembangan Kurikulum</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <h5>Produksi Video</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <h5>Berbicara di Depan Umum</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 88%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="zoom-in-up">
+            <h3>Sertifikasi</h3>
+            <!-- Updated certifications for educator role -->
+            <div class="certificate-item mb-4 d-flex">
+              <img
+                src="images/certificate1.png"
+                alt="Teaching Certificate"
+                class="img-thumbnail me-3 js-tilt"
+                style="width: 120px; height: auto"
+                data-aos="flip-left"  data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+              />
+              <div>
+                <h5>Pelatihan Pengajar</h5>
+                <p>Dikeluarkan Institut Pengajaran Nasional, 2024</p>
+              </div>
+            </div>
+            <div class="certificate-item d-flex">
+              <img
+                src="images/certificated.jpg"
+                alt="Video Certificate"
+                class="img-thumbnail me-3 js-tilt"
+                style="width: 120px; height: auto"
+                data-aos="flip-right"  data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              />
+              <div>
+                <h5>Destop Programing</h5>
+                <p>Dikeluarkan oleh Pro.Asta, 2025</p>
+              </div>
+            </div>
+            <br />
+            <div class="certificate-item d-flex">
+              <img
+                src="images/certificate .jpg"
+                alt="programmer Certificate"
+                class="img-thumbnail me-3 js-tilt"
+                style="width: 120px; height: auto"
+                data-aos="flip-down"  data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+              />
+              <div>
+                <h5>Apresiasi UKM HIMATEKNO</h5>
+                <p>Dikeluarkan oleh Universitas Battuta, 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section - Updated for teaching/coaching/content creation services -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">My Services</h2>
+
+        <div class="row g-4">
+          <!-- Service 1: Teaching/Coaching -->
+          <div
+            class="col-md-4"
+            data-aos="zoom-in-right"
+            data-aos-duration="1000"
+          >
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div
+                  class="icon-container bg-primary bg-gradient rounded-circle mx-auto mb-4"
+                >
+                  <i class="fas fa-chalkboard-teacher fa-2x text-white"></i>
+                </div>
+                <h3 class="card-title h4">Pengajaran & Pembinaan</h3>
+                <p class="card-text">
+                  Sesi pelatihan 1-on-1 yang dipersonalisasi dan juga kelompok
+                  yang disesuaikan dengan tujuan dan kebutuhan pembelajaran
+                  Anda.
+                </p>
+                <ul class="text-start ps-4">
+                  <li>Public Speaking</li>
+                  <li>Pengembangan keterampilan</li>
+                  <li>Pembinaan karir</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Content Creation -->
+          <div class="col-md-4" data-aos="zoom-in-up " data-aos-duration="1000">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div
+                  class="icon-container bg-success bg-gradient rounded-circle mx-auto mb-4"
+                >
+                  <i class="fas fa-video fa-2x text-white"></i>
+                </div>
+                <h3 class="card-title h4">Content Creation</h3>
+                <p class="card-text">
+                  Produksi video profesional dan pembuatan konten untuk tujuan
+                  pendidikan atau promosi dan personal breanding.
+                </p>
+                <ul class="text-start ps-4">
+                  <li>Pembelajaran Video Pendidikan/promosi</li>
+                  <li>Produksi tutorial</li>
+                  <li>Konten media sosial</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Video Editing -->
+          <div
+            class="col-md-4"
+            data-aos="zoom-in-left"
+            data-aos-duration="1000"
+          >
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div
+                  class="icon-container bg-info bg-gradient rounded-circle mx-auto mb-4"
+                >
+                  <i class="fas fa-film fa-2x text-white"></i>
+                </div>
+                <h3 class="card-title h4">Video Editing</h3>
+                <p class="card-text">
+                  Layanan pengeditan video berkualitas tinggi untuk memoles
+                  rekaman mentah Anda menjadi konten kelas profesional.
+                </p>
+                <ul class="text-start ps-4">
+                  <li>Adobe Premiere</li>
+                  <li>CapCut</li>
+                  <li>Sound design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Added pricing section -->
+        <div class="mt-5 text-center">
+          <h3 class="mb-4">Artikel</h3>
+          <div class="row g-4">
+            <div
+              class="col-md-4"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <div class="card pricing-card h-100">
+                <div class="card-header bg-primary text-white py-3">
+                  <img
+                    src="/images/artikrel01.jpg"
+                    alt="images"
+                    width="300 px"
+                  />
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i></i>Aksi Pengabdian Kepada Masyarakat di Sanggar
+                      terpadu
+                    </li>
+                    <a href="/artikel1.html" class="btn btn-sm btn-light mt-2"
+                      >lihat semua</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-down" data-aos-duration="2000">
+              <div class="card pricing-card h-100">
+                <div class="card-header bg-dark text-white py-3">
+                  <img src="/images/artikel02.jpg" alt="image" width="300px" />
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li><i></i>Kegiatan Sharing Season di Lingkungan UKM</li>
+                    <a href="/artikel2.html" class="btn btn-sm btn-light mt-2"
+                      >lihat semua</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left" data-aos-duration="2000">
+              <div class="card pricing-card h-100">
+                <div class="card-header bg-success text-white py-3">
+                  <img src="/images/artikel03.jpg" alt="image" width="300px" />
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li>
+                      <i></i>Kegiatan Perkemahan Patroli keamanan Sekolah 2023
+                      sewilayah Asahan 3
+                    </li>
+                    <a href="/artikel3.html" class="btn btn-sm btn-light mt-2"
+                      >lihat semua</a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section - Updated for teaching/content creation portfolio -->
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">My Portfolio</h2>
+
+        <!-- Portfolio filter tabs -->
+        <ul
+          class="nav nav-pills justify-content-center mb-4"
+          id="portfolio-tab"
+        >
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="pill"
+              data-bs-target="#all"
+            >
+              All Activity
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#teaching"
+            >
+              Teaching
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#videos"
+            >
+              Videos
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="pill"
+              data-bs-target="#editing"
+            >
+              Tutorial
+            </button>
+          </li>
+        </ul>
+
+        <!-- Portfolio items -->
+        <div class="tab-content">
+          <!-- All Items Tab -->
+          <div class="tab-pane fade show active" id="all">
+            <div class="row g-4">
+              <!-- Teaching Item -->
+              <div class="col-md-6">
+                <div class="portfolio-item" data-aos="fade-right"
+                data-aos-offset="300" data-category="teaching">
+                  <img
+                    src="images/belajarorigami.jpg"
+                    alt="Teaching Demo"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Kreasi Origami</h3>
+                    <p>
+                      Belajar membuat kreasi origami yang menarik untuk
+                      anak-anak
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sekolah sma -->
+              <div class="col-md-6">
+                <div class="portfolio-item" data-aos="fade-left"
+                data-aos-duration ="3000" data-category="videos">
+                  <img
+                    src="images/Sma.jpg"
+                    alt="Tutorial Series"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Foto Studio</h3>
+                    <p>sesi foto dengan teman SMA</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- drama -->
+              <div class="col-md-4">
+                <div class="portfolio-item" data-category="videos">
+                  <img
+                    src="images/drama.JPG"
+                    alt="Tutorial Series"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Teater competition</h3>
+                    <p>
+                      Membawakan drama Tragedi Malam Sabtu di kegiatan SEP 2
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Editing Video Item -->
+              <div class="col-md-4">
+                <div class="portfolio-item" data-category="editing">
+                  <img
+                    src="images/tutorial.png"
+                    alt="Editing Sample"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Sharing cara Live YouTube</h3>
+                    <p>Tutorial Live streaming YouTube menggunakan OBS</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stream Item -->
+              <div class="col-md-4">
+                <div class="portfolio-item" data-category="editing">
+                  <img
+                    src="images/editingvideo.jpg"
+                    alt="Video Content"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Tutorial Editing Video</h3>
+                    <p>Belajar editing video yang kece menggunakan CapCut</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Teaching Item -->
+              <div class="col-md-4">
+                <div class="portfolio-item" data-category="teaching">
+                  <img
+                    src="images/teaching.jpg"
+                    alt="Coaching Session"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Berlatih Public Speaking</h3>
+                    <p>
+                      Mengajarkan pentingnya storyteling dan listening yang baik
+                      buat anak-anak
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Editing Item -->
+              <div class="col-md-4">
+                <div class="portfolio-item" data-category="videos">
+                  <img
+                    src="images/video.jpg"
+                    alt="Tutorial Series"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Creative Video competition</h3>
+                    <p>Video kreatif yang berjudul Arjun 2024</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video Item -->
+              <div class="col-md-4">
+                <div class="portfolio-item" data-category="editing">
+                  <img
+                    src="images/QNAgame.png"
+                    alt="Live Session"
+                    class="img-fluid"
+                  />
+                  <div class="portfolio-overlay">
+                    <h3>Live Q&A Sessions</h3>
+                    <p>Monthly interactive live streams</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Teaching Tab -->
+          <div class="tab-pane fade" id="teaching">
+            <div class="row g-4">
+              <!-- This will be filled dynamically by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Videos Tab -->
+          <div class="tab-pane fade" id="videos">
+            <div class="row g-4">
+              <!-- This will be filled dynamically by JavaScript -->
+            </div>
+          </div>
+
+          <!-- Editing Tab -->
+          <div class="tab-pane fade" id="editing">
+            <div class="row g-4">
+              <!-- This will be filled dynamically by JavaScript -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Call-to-action -->
+        <div class="text-center mt-5">
+          <h3 class="mb-3">Mau Tahu Kegiatan Saya Yang Lain?</h3>
+          <a
+            href="https://www.youtube.com/@novrikurniawan6086/streams"
+            class="btn btn-primary btn-lg me-2"
+            ><i class="fab fa-youtube me-2"></i>My YouTube</a
+          >
+          <a
+            href="https://www.instagram.com/novri._908/"
+            class="btn btn-primary btn-lg me-2"
+            ><i class="fab fa-instagram me-2"></i>My instagram</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section - Updated for educator/coach -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h3 class="mb-4">Hubungi kami</h3>
+            <p>
+              Ada pertanyaan tentang layanan saya atau ingin mendiskusikan
+              proyek? Hubungi melalui salah satu saluran berikut:
+            </p>
+
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <i class="fas fa-envelope me-2 text-primary"></i>
+                kurniawannovri26@gmail.com
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone me-2 text-primary"></i>+62-2363-7201-88
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                Universitas Battuta jl.sekip No.01 simpang sikambing
+              </li>
+              <li class="mb-3">
+                <i class="fab fa-youtube me-2 text-primary"></i>
+                YouTube.com/@novrikurniawan6086
+              </li>
+            </ul>
+
+            <!-- Social media links -->
+            <div class="social-links mt-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=100065628696168"
+                class="text-dark me-3"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/novri._908/"
+                class="text-dark me-3"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@novrikurniawan6086"
+                class="text-dark me-3"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <!-- Map container  -->
+            <div class="mapouter">
+              <h3 class=" text-center mb-4">Alamat Saya</h3>
+              <div class="gmap_canvas">
+                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=Kost sekip residence &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+                <a href="https://sprunkin.com/">Sprunki Game</a>
+              </div>
+                <style>.mapouter{position:relative;text-align:right;width:100%;height:300px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:300px;}.gmap_iframe {height:300px!important;}</style>
+            </div>
+            <br />
+          </div>
+        </div>
+        <br />
+        <div class="card-massage">
+          <h3 class="mb-4 text-center">Kirim Pesan ke Saya</h3>
+          <form id="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nama Anda"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email Anda"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="phone"
+                  class="form-control"
+                  placeholder="No.Hp Anda"
+                  required
+                />
+              </div>
+              <div class="col-6">
+                <select class="form-select">
+                  <option selected disabled>
+                    Layanan apa yang Anda minati?
+                  </option>
+                  <option>Pengajaran & Pembinaan</option>
+                  <option>Content Creation</option>
+                  <option>Video Editing</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="newsletter"
+                  />
+                  <label class="form-check-label" for="newsletter">
+                    Berlangganan buletin pelatihan saya
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Kirim Pesan
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer bg-secondary text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5 mb-4 mb-lg-0 pe-lg-5">
+            <div class="footer-brand mx-2">
+              <h3 class="mb-3">Novri Kurniawan</h3>
+              <p class="footer-description">
+                "Tidak Ada Yang Namanya Keberuntungan, Yang Benar Adalah
+                Kesempatan Sejalan Dengan Kemampuan"
+              </p>
+              <div class="social-links mt-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100065628696168"
+                  class="social-icon"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.twitter.com" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="https://www.fa-linkedin.com" class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@novrikurniawan6086"
+                  class="social-icon"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h4 class="footer-heading mb-4">Services</h4>
+            <ul class="footer-links">
+              <li><a href="#">Coaching</a></li>
+              <li><a href="#">Workshops</a></li>
+              <li><a href="#">Video Production</a></li>
+              <li><a href="#">Editing</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-heading mb-4">Resources</h4>
+            <ul class="footer-links">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Free Downloads</a></li>
+              <li><a href="#">Recommended Tools</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom mt-5 pt-4">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              <p class="copyright mb-0 mx-2">
+                &copy; 2025 Portofolio-Novri. All rights reserved.
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-legal-links">
+                <a href="#">Privacy Policy</a>
+                <span class="mx-2">|</span>
+                <a href="#">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS  -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- Tilt scipt -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+  </body>
+</html>
