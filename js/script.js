@@ -290,32 +290,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // Create modal element
-      const modalElement = document.createElement("div");
-      modalElement.className = "modal fade";
-      modalElement.id = "portfolioModal";
-      modalElement.tabIndex = "-1";
-      modalElement.setAttribute("aria-hidden", "true");
-      modalElement.innerHTML = `
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">${title}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            ${modalContent}
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-            `;
-
-      document.body.appendChild(modalElement);
-
       // Create and show the modal
       const modal = new bootstrap.Modal(modalElement);
       modal.show();

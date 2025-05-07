@@ -3,7 +3,7 @@
     --primary-color: #0d6efd; /* Bootstrap primary blue */
     --secondary-color: #6c757d; /* Bootstrap secondary gray */
     --dark-color: #212529; /* Bootstrap dark */
-    --light-color: #e8e8e8; /* Bootstrap light */
+    --light-color: #8e8e8e; /* Bootstrap light */
     --success-color: #198754; /* Bootstrap success green */
     --info-color: #0dcaf0; /* Bootstrap info cyan */
     --warning-color: #ffc107; /* Bootstrap warning yellow */
@@ -438,7 +438,7 @@ section {
 /* Responsive Adjustments */
 @media (max-width: 992px) {
     section {
-        padding: 80px 0;
+        padding: 80px;
     }
     
     .hero-section {
@@ -451,17 +451,45 @@ section {
     }
 }
 
-@media (max-width: 768px) {   
-    section {
-        padding: 60px 0;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body, html {
+        width: 100%;
+        overflow-x: hidden;
     }
     
-    .hero-section {
+    section {
+        padding: 60px 20px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .footer-brand, .footer-heading {
         text-align: center;
     }
+    
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .footer-links {
+        text-align: center;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 0 20px;
+    }
+    
     .hero-img {
         max-width: 70%;
-        margin-top: 30;
+        margin: 30px auto;
+        display: block;
     }
     
     .section-title {
@@ -469,7 +497,7 @@ section {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
     .display-4 {
         font-size: 2.5rem;
     }
@@ -477,8 +505,36 @@ section {
     .hero-img {
         max-width: 100%;
     }
+
+    section {
+        padding: 30px 15px;
+    }
     
+    .hero-section {
+        padding: 0 15px;
+    }
+    
+    /* Ensure all containers are properly constrained */
+    .container, .container-fluid {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    /* Reset any negative margins that might be causing shifts */
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    [class*="col-"] {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
+
+    
 /* Alert Styles */
 .alert {
     border-left: 4px solid #0d6efd;
