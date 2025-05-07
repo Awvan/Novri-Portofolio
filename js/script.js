@@ -254,35 +254,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const title = portfolioItem.querySelector("h3")?.textContent || "";
       const description = portfolioItem.querySelector("p")?.textContent || "";
 
-      // Create modal content based on what was clicked
-      let modalContent = "";
-      if (
-        this.textContent.includes("Watch") ||
-        this.textContent.includes("View")
-      ) {
-        modalContent = `
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                                title="${title}" 
-                                allowfullscreen></iframe>
-                    </div>
-                    <div class="mt-3">
-                        <h5>${title}</h5>
-                        <p>${description}</p>
-                    </div>
-                `;
-      } else {
-        const imgSrc = portfolioItem.querySelector("img")?.src || "";
-        modalContent = `
-                    <div class="text-center">
-                        <img src="${imgSrc}" 
-                             alt="${title}" 
-                             class="img-fluid mb-3">
-                        <h5>${title}</h5>
-                        <p>${description}</p>
-                    </div>
-                `;
-      }
+      
 
       // Check if Bootstrap is available
       if (typeof bootstrap === "undefined") {
